@@ -2,15 +2,15 @@ Summary:	ekg logs viewer
 Summary(pl):	Przegl±darka logów ekg
 Name:		ekglog
 Version:	20031103
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://dom.comernet.pl/ekglog/%{name}-%{version}.tar.bz2
 # Source0-md5:	918cd7010c4a39c82410363122467782
-Patch0:		%{name}-includes_fix.patch
-Patch1:		%{name}-ncurses_fix.patch
-Patch2:		%{name}-inline.patch
+Patch0:		%{name}-ncurses_fix.patch
+Patch1:		%{name}-inline.patch
 URL:		http://dom.comernet.pl/ekglog/
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,8 +22,7 @@ Program ekglog s³u¿y do przegl±dania logów z ekg.
 %prep
 %setup -q -c
 %patch0 -p0
-%patch1 -p0
-%patch2 -p1
+%patch1 -p1
 
 %build
 %{__make} -C src \
