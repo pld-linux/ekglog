@@ -8,7 +8,9 @@ Group:		Applications/Console
 Source0:	http://dom.comernet.pl/ekglog/%{name}-%{version}.tar.bz2
 # Source0-md5:	3cb523f1a4f05181dc6489f50fb29e8e
 URL:		http://dom.comernet.pl/ekglog/
+BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
