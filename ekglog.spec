@@ -1,5 +1,5 @@
 Summary:	ekg logs viewer
-Summary(pl):	przegl±darka logów ekg.
+Summary(pl):	Przegl±darka logów ekg
 Name:		ekglog
 Version:	20031019
 Release:	0.1
@@ -25,8 +25,8 @@ Program ekglog s³u¿y do przegl±dania logów z ekg.
 %patch1 -p0
 
 %build
-cd src/
-%{__make}
+%{__make} -C src
+# TODO: optflags
 
 %install
 rm -rf $RPM_BUILD_ROOT
