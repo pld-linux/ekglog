@@ -1,0 +1,26 @@
+--- src/stuff.cc~	2003-10-21 14:54:23.000000000 +0000
++++ src/stuff.cc	2003-10-21 15:07:17.000000000 +0000
+@@ -32,9 +32,10 @@
+ }
+ 
+ 
+-void print_line(WINDOW *w, const std::string &str) {
++/*
++ void print_line(WINDOW *w, const std::string &str) {
+     wprintw(w, str.c_str());
+-}
++}*/
+ 
+ 
+ /*
+--- src/stuff.hh~	2003-10-21 14:54:34.000000000 +0000
++++ src/stuff.hh	2003-10-21 15:07:25.000000000 +0000
+@@ -33,7 +33,7 @@
+ class bad_string {};
+ 
+ int str2int(const std::string &str);
+-void print_line(WINDOW *w, const std::string &str);
++//void print_line(WINDOW *w, const std::string &str);
+ int color_pair(int fg, int bold, int bg);
+ int line_lenght(const std::string &str);
+ const std::string time_string(time_t t);
