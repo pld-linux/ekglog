@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://dom.comernet.pl/ekglog/%{name}-%{version}.tar.bz2
-# Source0-md5:	cf2f8474af56a0cfbf16f8372654f29d
+# Source0-md5:	3cb523f1a4f05181dc6489f50fb29e8e
 URL:		http://dom.comernet.pl/ekglog/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
