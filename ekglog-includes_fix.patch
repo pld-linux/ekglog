@@ -1,5 +1,7 @@
---- src/Makefile~	2003-10-17 18:57:19.000000000 +0200
-+++ src/Makefile	2003-10-21 16:21:13.000000000 +0200
+Wspólne podkatalogi: src.orig/commands i src/commands
+diff -u src.orig/Makefile src/Makefile
+--- src.orig/Makefile	2003-11-03 09:36:05.000000000 +0100
++++ src/Makefile	2003-11-03 09:36:19.000000000 +0100
 @@ -11,7 +11,7 @@
  
  PROGRAM = ekglog

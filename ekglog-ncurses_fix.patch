@@ -1,26 +1,11 @@
---- src/stuff.cc~	2003-10-21 14:54:23.000000000 +0000
-+++ src/stuff.cc	2003-10-21 15:07:17.000000000 +0000
-@@ -32,9 +32,10 @@
- }
+--- src.orig/input.cc	2003-11-03 09:36:05.000000000 +0100
++++ src/input.cc	2003-11-03 09:45:30.000000000 +0100
+@@ -114,7 +114,7 @@
+ void input::refresh(void) {
+     werase(_win);
+     wmove(_win, 0, 0);
+-    wprintw(_win, _line.c_str());
++    wprintw(_win, (NCURSES_CONST char *) _line.c_str());
+     wmove(_win, 0, _line_pos);
  
- 
--void print_line(WINDOW *w, const std::string &str) {
-+/*
-+ void print_line(WINDOW *w, const std::string &str) {
-     wprintw(w, str.c_str());
--}
-+}*/
- 
- 
- /*
---- src/stuff.hh~	2003-10-21 14:54:34.000000000 +0000
-+++ src/stuff.hh	2003-10-21 15:07:25.000000000 +0000
-@@ -33,7 +33,7 @@
- class bad_string {};
- 
- int str2int(const std::string &str);
--void print_line(WINDOW *w, const std::string &str);
-+//void print_line(WINDOW *w, const std::string &str);
- int color_pair(int fg, int bold, int bg);
- int line_lenght(const std::string &str);
- const std::string time_string(time_t t);
+     wnoutrefresh(_win);
