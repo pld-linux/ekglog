@@ -1,7 +1,7 @@
 Summary:	ekg logs viewer
 Summary(pl):	Przegl±darka logów ekg
 Name:		ekglog
-Version:	20031124
+Version:	20031222
 Release:	1
 License:	GPL
 Group:		Applications/Console
