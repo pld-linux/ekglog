@@ -1,0 +1,11 @@
+--- src/Makefile~	2003-10-17 18:57:19.000000000 +0200
++++ src/Makefile	2003-10-21 16:21:13.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ PROGRAM = ekglog
+ 
+-CFLAGS = -Wall -ggdb -I. -I.. -Icommands
++CFLAGS = -Wall -ggdb -I. -I.. -Icommands -I/usr/include/ncurses
+ 
+ .SUFFIXES: .o .cc
+ 
