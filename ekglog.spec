@@ -1,12 +1,12 @@
 Summary:	ekg logs viewer
 Summary(pl):	Przegl±darka logów ekg
 Name:		ekglog
-Version:	20040821
+Version:	20040826
 Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://dom.comernet.pl/ekglog/%{name}-%{version}.tar.bz2
-# Source0-md5:	4a79a4f077f77ec1497027329851592b
+# Source0-md5:	55f1ace38d97a4cb36223bd85659dac2
 URL:		http://dom.comernet.pl/ekglog/
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
