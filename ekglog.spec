@@ -25,7 +25,7 @@ Program ekglog s³u¿y do przegl±dania logów z ekg.
 %build
 %{__make} -C src \
 	CC="%{__cxx}" \
-	CFLAGS="%{rpmcflags} -Wall -I. -Icommands -I/usr/include/ncurses"
+	CFLAGS="%{rpmcflags} -Wall -I. -Icommands"
 
 %install
 rm -rf $RPM_BUILD_ROOT
