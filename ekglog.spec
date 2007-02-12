@@ -1,5 +1,5 @@
 Summary:	ekg logs viewer
-Summary(pl):	Przegl±darka logów ekg
+Summary(pl.UTF-8):   PrzeglÄ…darka logÃ³w ekg
 Name:		ekglog
 Version:	20040928
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 ekglog can be used to view logfiles created by ekg.
 
-%description -l pl
-Program ekglog s³u¿y do przegl±dania logów z ekg.
+%description -l pl.UTF-8
+Program ekglog sÅ‚uÅ¼y do przeglÄ…dania logÃ³w z ekg.
 
 %prep
 %setup -q -c
