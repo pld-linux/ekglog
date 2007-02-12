@@ -1,5 +1,5 @@
 Summary:	ekg logs viewer
-Summary(pl.UTF-8):   Przeglądarka logów ekg
+Summary(pl.UTF-8):	Przeglądarka logów ekg
 Name:		ekglog
 Version:	20040928
 Release:	1
